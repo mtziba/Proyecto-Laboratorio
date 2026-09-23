@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 5 - Control de Laboratorios Liceo</title>
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-lab="5">
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="inicio.html" class="brand-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7UP0GYH8O83fh3WhIOMEWH8Sy38WzZfp82KymQFkxSvd3qXuPLSZRiBp&s=10" width="20" height="14">
+                <h1>Instituto Superior de Comercio Francisco Araya Bennett</h1>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                    <li><a href="lab1.html" class="nav-link">Lab 01</a></li>
+                    <li><a href="lab2.html" class="nav-link">Lab 02</a></li>
+                    <li><a href="lab3.html" class="nav-link">Lab 03</a></li>
+                    <li><a href="lab4.html" class="nav-link">Lab 04</a></li>
+                    <li><a href="lab5.html" class="nav-link active">Lab 05</a></li>
+                    <li><a href="contactos.html" class="nav-link">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL DE DETALLE -->
+    <main class="main-container">
+
+        <div class="detail-layout">
+
+            <!-- COLUMNA PRINCIPAL DE INFORMACIÓN -->
+            <section>
+
+                <article class="detail-card">
+                    <div class="detail-header">
+                        <div>
+                            <h2 class="lab-title" style="font-size: 1.75rem;">Laboratorio 05: ⭐</h2>
+                            <p class="lab-subtitle">Tercer Piso (Capacidad: 12 alumnos)</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <!-- Fuera de servicio: estado fijo, no se actualiza mediante BackEnd.js -->
+                            <span class="badge badge-fuera-servicio" id="estado-actual">Estado Actual: Fuera de Servicio</span>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title" style="font-size: 1.2rem;">Ficha Técnica de Equipos</h3>
+                    
+                    <table class="detail-table">
+                        <tbody>
+                            <tr>
+                                <th>Cantidad de Equipos</th>
+                                <td>12 PCs</td>
+                            </tr>
+                            <tr>
+                                <th>Sistema Operativo (S.O.)</th>
+                                <td>Dual Boot: Linux Mint / Windows 10 Pro</td>
+                            </tr>
+                            <tr>
+                                <th>Procesador</th>
+                                <td>Intel Core i5 - 13ª Generación</td>
+                            </tr>
+                            <tr>
+                                <th>Memoria RAM</th>
+                                <td>4 GB DDR4</td>
+                            </tr>
+                            <tr>
+                                <th>Almacenamiento</th>
+                                <td>512 GB SSD</td>
+                            </tr>
+                            <tr>
+                                <th>Software Instalado</th>
+                                <td>Cisco Packet Tracer, CPU-Z, DB Browser, DBeaver, Dev-C++, Microsoft Office, VS Code, MySQL, PSeInt, Java, JavaScript, Python, Scratch, WinRAR</td>
+                            </tr>
+                            <tr>
+                                <th>Periféricos</th>
+                                <td>Teclado, Mouse</td>
+                            </tr>
+                            <tr>
+                                <th>Equipamiento Adicional</th>
+                                <td>Pizarra, Proyector</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- ESTADO DEL LABORATORIO: FUERA DE SERVICIO, SIN HORARIO ASIGNADO -->
+                <article class="detail-card">
+                    <h3 class="section-title" style="font-size: 1.2rem;">Horario y Estado de Uso Diario</h3>
+                    <div class="aviso-fuera-servicio">
+                        <p>Este laboratorio se encuentra <strong>fuera de servicio</strong> y actualmente no tiene horario de clases asignado. Cuando vuelva a estar operativo, este espacio mostrará su horario semanal igual que los demás laboratorios.</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- BARRA LATERAL - ACCESO RÁPIDO A OTROS LABS -->
+            <aside class="quick-nav">
+                <h3>Otros Laboratorios</h3>
+                <ul class="quick-nav-list">
+                    <li class="quick-nav-item" data-lab="1">
+                        <a href="lab1.html" class="quick-nav-link">
+                            <span>Lab 1: Computación</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="2">
+                        <a href="lab2.html" class="quick-nav-link">
+                            <span>Lab 2: Programación</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="3">
+                        <a href="lab3.html" class="quick-nav-link">
+                            <span>Lab 3: Diseño Digital</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="4">
+                        <a href="lab4.html" class="quick-nav-link">
+                            <span>Lab 4: Diseño Digital</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="5">
+                        <a href="lab5.html" class="quick-nav-link"style="border-left: 4px solid var(--primary-color);">
+                            <span>Lab 5: Diseño Digital</span>
+                            <span class="badge badge-fuera-servicio" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Fuera de Servicio</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Liceo Técnico - Sistema de Control de Laboratorios | Proyecto Estudiantil</p>
+    </footer>
+
+    <!-- BackEnd.js: actualiza los badges de los otros laboratorios en esta barra lateral -->
+    <script src="BackEnd.js" defer></script>
+</body>
+</html>

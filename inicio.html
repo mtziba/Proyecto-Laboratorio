@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Laboratorios - Liceo</title>
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN PRINCIPAL -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="inicio.html" class="brand-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7UP0GYH8O83fh3WhIOMEWH8Sy38WzZfp82KymQFkxSvd3qXuPLSZRiBp&s=10" width="20" height="14">
+                <h1>Instituto Superior de Comercio Francisco Araya Bennett</h1>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="inicio.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="lab1.html" class="nav-link">Lab 01</a></li>
+                    <li><a href="lab2.html" class="nav-link">Lab 02</a></li>
+                    <li><a href="lab3.html" class="nav-link">Lab 03</a></li>
+                    <li><a href="lab4.html" class="nav-link">Lab 04</a></li>
+                    <li><a href="lab5.html" class="nav-link">Lab 05</a></li>
+                    <li><a href="contactos.html" class="nav-link">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container">
+
+        <!-- Banner Informativo / Dashboard General -->
+        <section class="hero-banner">
+            <h2>Sistema de Control de Equipos y Estado de Laboratorios</h2>
+            <p>Consulte la disponibilidad de las salas de computación, número de equipos informáticos y el sistema operativo instalado en cada laboratorio. El estado de cada laboratorio se calcula automáticamente según la hora actual y el horario de clases.</p>
+            
+            <div class="metrics-grid">
+                <article class="metric-card">
+                    <div class="metric-value">5</div>
+                    <div class="metric-label">Laboratorios Totales</div>
+                </article>
+                <article class="metric-card">
+                    <div class="metric-value">102</div>
+                    <div class="metric-label">Equipos Operativos</div>
+                </article>
+                <article class="metric-card">
+                    <div class="metric-value" id="stat-disponibles">–</div>
+                    <div class="metric-label">Labs Disponibles</div>
+                </article>
+                <article class="metric-card">
+                    <div class="metric-value" id="stat-ocupados">–</div>
+                    <div class="metric-label">Labs Ocupados</div>
+                </article>
+            </div>
+            <p class="nota-actualizacion" id="hora-actualizacion"></p>
+        </section>
+
+        <!-- SECCIÓN DE LABORATORIOS -->
+        <section>
+            <h2 class="section-title">Nuestros Laboratorios</h2>
+
+            <div class="labs-grid">
+
+                <!-- TARJETA LABORATORIO 1 -->
+                <article class="lab-card" data-lab="1">
+                    <div>
+                        <div class="lab-card-header">
+                            <div>
+                                <h3 class="lab-title">Laboratorio 1 ⭐⭐⭐⭐⭐</h3>
+                                <p class="lab-subtitle">Laboratorio de Computacion General</p>
+                            </div>
+                            <!-- Estado actualizado automáticamente por BackEnd.js -->
+                            <span class="badge badge-disponible">Disponible</span>
+                        </div>
+                        
+                        <ul class="lab-specs">
+                            <li>
+                                <span class="spec-label">Cantidad de Equipos:</span>
+                                <span class="spec-value">24 PCs</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Sistema Operativo:</span>
+                                <span class="spec-value">Windows 11 Pro</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Ubicación:</span>
+                                <span class="spec-value">Segundo Piso</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Proyector / Pizarra:</span>
+                                <span class="spec-value">Pizarra, Proyector</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="lab1.html" class="btn">Ver Detalles del Lab 1 &rarr;</a>
+                </article>
+
+                <!-- TARJETA LABORATORIO 2 -->
+                <article class="lab-card" data-lab="2">
+                    <div>
+                        <div class="lab-card-header">
+                            <div>
+                                <h3 class="lab-title">Laboratorio 2 ⭐⭐⭐</h3>
+                                <p class="lab-subtitle">Programación y Redes</p>
+                            </div>
+                            <!-- Estado actualizado automáticamente por BackEnd.js -->
+                            <span class="badge badge-disponible">Disponible</span>
+                        </div>
+                        
+                        <ul class="lab-specs">
+                            <li>
+                                <span class="spec-label">Cantidad de Equipos:</span>
+                                <span class="spec-value">27 PCs</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Sistema Operativo:</span>
+                                <span class="spec-value">Windows 11 Pro</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Ubicación:</span>
+                                <span class="spec-value">Segundo Piso - Pabellón B</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Proyector / Pizarra:</span>
+                                <span class="spec-value">Pizarra, Proyector</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="lab2.html" class="btn">Ver Detalles del Lab 2 &rarr;</a>
+                </article>
+
+                <!-- TARJETA LABORATORIO 3 -->
+                <article class="lab-card" data-lab="3">
+                    <div>
+                        <div class="lab-card-header">
+                            <div>
+                                <h3 class="lab-title">Laboratorio 3 ⭐⭐</h3>
+                                <p class="lab-subtitle">Aplicacion Informatica</p>
+                            </div>
+                            <!-- Estado actualizado automáticamente por BackEnd.js -->
+                            <span class="badge badge-disponible">Disponible</span>
+                        </div>
+                        
+                        <ul class="lab-specs">
+                            <li>
+                                <span class="spec-label">Cantidad de Equipos:</span>
+                                <span class="spec-value">23 PCs</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Sistema Operativo:</span>
+                                <span class="spec-value">Linux Mint</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Ubicación:</span>
+                                <span class="spec-value">Segundo Piso</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Proyector / Pizarra:</span>
+                                <span class="spec-value">Pizarra, Proyector</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="lab3.html" class="btn">Ver Detalles del Lab 3 &rarr;</a>
+                </article>
+
+                <!-- TARJETA LABORATORIO 4 -->
+                <article class="lab-card" data-lab="4">
+                    <div>
+                        <div class="lab-card-header">
+                            <div>
+                                <h3 class="lab-title">Laboratorio 4 ⭐⭐⭐⭐</h3>
+                                <p class="lab-subtitle">Programacion, Administracion base de datos y Sistemas Operativos</p>
+                            </div>
+                            <!-- Estado actualizado automáticamente por BackEnd.js -->
+                            <span class="badge badge-disponible">Disponible</span>
+                        </div>
+                        
+                        <ul class="lab-specs">
+                            <li>
+                                <span class="spec-label">Cantidad de Equipos:</span>
+                                <span class="spec-value">28 PCs</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Sistema Operativo:</span>
+                                <span class="spec-value">Windows 11 Pro</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Ubicación:</span>
+                                <span class="spec-value">Tercer Piso</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Proyector / Pizarra:</span>
+                                <span class="spec-value">Pizarra, Proyector</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="lab4.html" class="btn">Ver Detalles del Lab 4 &rarr;</a>
+                </article>
+
+                <!-- TARJETA LABORATORIO 5 -->
+                <article class="lab-card" data-lab="5">
+                    <div>
+                        <div class="lab-card-header">
+                            <div>
+                                <h3 class="lab-title">Laboratorio 5 ⭐</h3>
+                                <p class="lab-subtitle">Fuera de servicio</p>
+                            </div>
+                            <!-- Fuera de servicio: estado fijo -->
+                            <span class="badge badge-fuera-servicio">Fuera de Servicio</span>
+                        </div>
+                        
+                        <ul class="lab-specs">
+                            <li>
+                                <span class="spec-label">Cantidad de Equipos:</span>
+                                <span class="spec-value">12 PCs</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Sistema Operativo:</span>
+                                <span class="spec-value">Dual Boot: Linux Mint / Win 10 Pro</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Ubicación:</span>
+                                <span class="spec-value">Tercer Piso</span>
+                            </li>
+                            <li>
+                                <span class="spec-label">Proyector / Pizarra:</span>
+                                <span class="spec-value">Pizarra, Proyector</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="lab5.html" class="btn">Ver Detalles del Lab 5 &rarr;</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <p>&copy; Instituto Superior de Comercio Francisco Araya Bennett | Proyecto Estudiantil</p>
+    </footer>
+
+    <!-- BackEnd.js: calcula cuántos laboratorios están disponibles/ocupados ahora mismo -->
+    <script src="BackEnd.js" defer></script>
+</body>
+</html>

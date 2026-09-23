@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1 - Control de Laboratorios Liceo</title>
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-lab="1">
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="inicio.html" class="brand-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7UP0GYH8O83fh3WhIOMEWH8Sy38WzZfp82KymQFkxSvd3qXuPLSZRiBp&s=10" width="20" height="14">
+                <h1>Instituto Superior de Comercio Francisco Araya Bennett</h1>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                    <li><a href="lab1.html" class="nav-link active">Lab 01</a></li>
+                    <li><a href="lab2.html" class="nav-link">Lab 02</a></li>
+                    <li><a href="lab3.html" class="nav-link">Lab 03</a></li>
+                    <li><a href="lab4.html" class="nav-link">Lab 04</a></li>
+                    <li><a href="lab5.html" class="nav-link">Lab 05</a></li>
+                    <li><a href="contactos.html" class="nav-link">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL DE DETALLE -->
+    <main class="main-container">
+
+        <div class="detail-layout">
+
+            <!-- COLUMNA PRINCIPAL DE INFORMACIÓN -->
+            <section>
+
+                <article class="detail-card">
+                    <div class="detail-header">
+                        <div>
+                            <h2 class="lab-title" style="font-size: 1.75rem;">Laboratorio 01: ⭐⭐⭐⭐⭐</h2>
+                            <p class="lab-subtitle">Segundo Piso (Capacidad: 24 alumnos)</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <!-- Estado actualizado automáticamente por BackEnd.js según el horario -->
+                            <span class="badge badge-disponible" id="estado-actual">Estado Actual: Disponible</span>
+                            <p id="detalle-ocupacion" class="detalle-ocupacion"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title" style="font-size: 1.2rem;">Ficha Técnica de Equipos</h3>
+                    
+                    <table class="detail-table">
+                        <tbody>
+                            <tr>
+                                <th>Cantidad de Equipos</th>
+                                <td>24 PCs</td>
+                            </tr>
+                            <tr>
+                                <th>Sistema Operativo (S.O.)</th>
+                                <td>Windows 11 Pro</td>
+                            </tr>
+                            <tr>
+                                <th>Procesador</th>
+                                <td>Intel Core i7 - 9ª a 11ª Generación</td>
+                            </tr>
+                            <tr>
+                                <th>Memoria RAM</th>
+                                <td>16 GB DDR4</td>
+                            </tr>
+                            <tr>
+                                <th>Almacenamiento</th>
+                                <td>512 GB SSD</td>
+                            </tr>
+                            <tr>
+                                <th>Software Instalado</th>
+                                <td>Cisco Packet Tracer, CPU-Z, DB Browser, DBeaver, Dev-C++, GitHub Desktop, Microsoft Office, VS Code, MySQL, Node.js, Oracle VirtualBox, PSeInt, Java, JavaScript, Python, Scratch, TeamViewer, Unity, WinRAR</td>
+                            </tr>
+                            <tr>
+                                <th>Periféricos</th>
+                                <td>Teclado, Mouse</td>
+                            </tr>
+                            <tr>
+                                <th>Equipamiento Adicional</th>
+                                <td>Pizarra, Proyector</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- HORARIO Y DISPONIBILIDAD DE BLOQUES -->
+                <article class="detail-card">
+                    <h3 class="section-title" style="font-size: 1.2rem;">Horario y Estado de Uso Diario</h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-muted);">Consulte qué bloques horarios está Ocupado por clases o Disponible para uso libre de estudiantes. El bloque correspondiente a la hora actual queda resaltado automáticamente.</p>
+
+                    <table class="schedule-table" id="tabla-horario" data-lab="1">
+                        <thead>
+                            <tr>
+                                <th>Bloque Horario</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td colspan="6">Cargando horario…</td></tr>
+                        </tbody>
+                    </table>
+                    <noscript>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">Activa JavaScript en tu navegador para ver el horario y el estado en tiempo real de este laboratorio.</p>
+                    </noscript>
+                </article>
+
+            </section>
+
+            <!-- BARRA LATERAL - ACCESO RÁPIDO A OTROS LABS -->
+            <aside class="quick-nav">
+                <h3>Otros Laboratorios</h3>
+                <ul class="quick-nav-list">
+                    <li class="quick-nav-item" data-lab="1">
+                        <a href="lab1.html" class="quick-nav-link"style="border-left: 4px solid var(--primary-color);">
+                            <span>Lab 1: Computación</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="2">
+                        <a href="lab2.html" class="quick-nav-link">
+                            <span>Lab 2: Programación</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="3">
+                        <a href="lab3.html" class="quick-nav-link">
+                            <span>Lab 3: Diseño Digital</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="4">
+                        <a href="lab4.html" class="quick-nav-link">
+                            <span>Lab 4: Diseño Digital</span>
+                            <span class="badge badge-disponible" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Disponible</span>
+                        </a>
+                    </li>
+                    <li class="quick-nav-item" data-lab="5">
+                        <a href="lab5.html" class="quick-nav-link">
+                            <span>Lab 5: Diseño Digital</span>
+                            <span class="badge badge-fuera-servicio" style="padding: 0.1rem 0.4rem; font-size: 0.7rem;">Fuera de Servicio</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <p>&copy; Instituto Superior de Comercio Francisco Araya Bennett | Proyecto Estudiantil</p>
+    </footer>
+
+    <!-- BackEnd.js: monitorea la hora actual y actualiza el estado del laboratorio según el horario -->
+    <script src="BackEnd.js" defer></script>
+</body>
+</html>
