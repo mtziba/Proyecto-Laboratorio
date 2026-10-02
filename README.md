@@ -45,7 +45,7 @@ proyecto-laboratorios/
 ├── lab3.html         # Ficha detallada del Laboratorio 3 (Diseño Digital)
 ├── lab4.html         # Ficha detallada del Laboratorio 4 (Diseño Digital)
 ├── lab5.html         # Página detallada del Laboratorio 5 (Fuera de servicio)
-├── sobre_mi.html     · Pagina de informacion sobre el creador de la apgina web (yo)
+├── sobre_mi.html     · Pagina de informacion sobre el creador de la pagina web (yo)
 ├── contactos.html    # Formulario de contacto
 └── README.md         # Documentación e instrucciones para subir archivos
 _____________________________________________________
